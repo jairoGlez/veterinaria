@@ -19,7 +19,7 @@ class Menu:
     def mostrar(self):
         usuarios = self.vet.mostrarDueños()
         for u in usuarios:
-            print("{0:25} {1:10} {2:15} {3:15} {4:10} {5:15} {6:10} {7:15} {8:10}".format(u[0],u[1],u[2],u[3],u[4],u[5],u[6],u[7],u[8]))
+            print("{0:25} {1:10} {2:15} {3:15} {4:10} {5:15} {6:10} {7:15} {8:10}z".format(u[0],u[1],u[2],u[3],u[4],u[5],u[6],u[7],u[8]))
 
     def capturar(self):
         correo = input("Correo: ")
