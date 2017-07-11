@@ -35,4 +35,14 @@ def agregarDueño():
 
     return respuesta
 
+@app.route("/buscar", methods=["POST"])
+def buscar():
+    print(request.form)
+    palabra = request.form["palabra"]
+    lista = vet.buscar(palabra)
+    respuesta = jsonify(lista)
+    respuesta.headers.add("Access-Control-Allow-Origin","*")
+
+    return respuesta
+
 app.run()
